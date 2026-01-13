@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gujarati Trader – Official</title>
+
+<!-- ================= META PIXEL CODE ================= -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '3087088988140561');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3087088988140561&ev=PageView&noscript=1"/>
+</noscript>
+<!-- ============== END META PIXEL ================= -->
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    font-family:Segoe UI,sans-serif;
+    background:linear-gradient(135deg,#081f3d,#0a3d62);
+    color:#fff;
+    min-height:100vh;
+}
+.container{
+    max-width:420px;
+    margin:auto;
+    padding:20px;
+    text-align:center;
+    animation:fadeUp 1s ease;
+}
+@keyframes fadeUp{
+    from{opacity:0;transform:translateY(30px)}
+    to{opacity:1;transform:none}
+}
+.logo-wrap{
+    width:130px;height:130px;margin:0 auto 20px;
+    border-radius:50%;padding:5px;
+    background:linear-gradient(45deg,#00ff88,#00cc6a);
+    animation:glow 2s infinite alternate;
+}
+.logo-wrap img{
+    width:100%;height:100%;
+    border-radius:50%;
+    object-fit:cover;
+}
+@keyframes glow{
+    from{box-shadow:0 0 20px #00ff88}
+    to{box-shadow:0 0 45px #00ff88}
+}
+h1{font-size:24px;font-weight:800;color:#00ff88}
+.subtitle{font-size:14px;margin-bottom:25px;opacity:.9}
+.join-btn{
+    width:100%;padding:18px;
+    border:none;border-radius:14px;
+    font-size:18px;font-weight:800;
+    background:linear-gradient(45deg,#00ff88,#00cc6a);
+    color:#062c45;cursor:pointer;
+    box-shadow:0 10px 30px rgba(0,255,136,.5);
+    animation:pulseBtn 1.4s infinite;
+}
+@keyframes pulseBtn{
+    50%{transform:scale(1.05)}
+}
+.feature{
+    display:flex;align-items:center;gap:12px;
+    padding:15px;margin:15px 0;
+    border-radius:12px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(0,255,136,.3);
+}
+.feature svg{width:26px;height:26px;fill:#00ff88}
+.description{
+    margin-top:20px;font-size:14px;line-height:1.6;opacity:.85
+}
+.timer{
+    margin-top:20px;padding:10px;
+    border-radius:8px;border:2px solid #00ff88;
+    font-weight:700;background:rgba(0,255,136,.15);
+}
+.footer{
+    margin-top:30px;font-size:12px;opacity:.7
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo-wrap">
+<img src="https://uploads.onecompiler.io/447v8k97f/44agms2de/WhatsApp%20Image%202025-12-29%20at%2018.24.42.jpeg" alt="Gujarati Trader">
+</div>
+
+<h1>Gujarati Trader (Official)</h1>
+<p class="subtitle"><b>Stock Market Learning & Education Community</b></p>
+
+<button class="join-btn" onclick="trackTelegramSubscribe()">
+Join Telegram Channel
+</button>
+
+<div class="feature">
+<svg viewBox="0 0 24 24"><path d="M3 3h18v18H3z"/></svg>
+<span>Educational Market Awareness</span>
+</div>
+
+<div class="feature">
+<svg viewBox="0 0 24 24"><path d="M12 2l10 20H2z"/></svg>
+<span>Financial Learning Concepts</span>
+</div>
+
+<div class="feature">
+<svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/></svg>
+<span>Knowledge Sharing Community</span>
+</div>
+
+<div class="description">
+<b>Disclaimer:</b><br>
+This is a <b>100% educational stock market learning community</b>.<br>
+No tips, no signals, no paid services.<br>
+All content is for learning only.
+</div>
+
+<div class="timer" id="timer">Session Timer 04:40</div>
+
+<div class="footer">
+© 2025 Gujarati Trader | Educational Purpose Only
+</div>
+
+</div>
+
+<script>
+/* ================= TELEGRAM SUBSCRIBE TRACKING ================= */
+function trackTelegramSubscribe(){
+
+    // Meta Custom Event
+    if(typeof fbq === 'function'){
+        fbq('trackCustom','TelegramSubscribe',{
+            source:'meta_ads',
+            intent:'high'
+        });
+    }
+
+    // Redirect to NEW Telegram Invite Link
+    setTimeout(function(){
+        window.open(
+            'https://t.me/+DUMUrNuIsWQ0ZjQ1',
+            '_blank'
+        );
+    },200);
+}
+
+/* ================= TIMER ================= */
+let time=280;
+setInterval(()=>{
+    time--; if(time<=0) time=280;
+    let m=String(Math.floor(time/60)).padStart(2,'0');
+    let s=String(time%60).padStart(2,'0');
+    document.getElementById('timer').innerText=`Session Timer ${m}:${s}`;
+},1000);
+</script>
+
+</body>
+</html>
